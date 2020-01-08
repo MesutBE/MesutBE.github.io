@@ -6,7 +6,7 @@
 
 - I am from Turkey. :tr:
 - :world_map: [Living at](https://www.google.be/maps/place/51°10'38.8"N+4°22'29.9"E/@51.1774523,4.372766,17z/ "Google Maps Coordinates") `Antwerpen`
-- :mailbox: mail to me: gelukkig,zijn.be@gmail.com
+- :mailbox: mail to me: gelukkig.zijn.be@gmail.com
 - This is my [website](https://mesutbe.github.io/)
 - And my [gitHub](https://github.com/MesutBE/)
 

@@ -10,6 +10,66 @@ export default class GitHubWorks {
         this.githubReposEl = document.querySelector('#github-repos');
     }
 
+    async getInfoRepoCount(name){
+
+        const headers = {
+            "Authorization": `Token ${this.token}`
+        }
+        
+        try {
+            const url = `https://api.github.com/users/${name}/repos?per_page=1`;
+            
+            let response = await fetch(url, {
+                "method": "GET",
+                // "headers": headers,
+            });
+            
+            const link = response.headers.get('link');
+            // <https://api.github.com/user/59531743/repos?per_page=1&page=2>; rel="next", <https://api.github.com/user/59531743/repos?per_page=1&page=71>; rel="last"
+            const temp = link.split('=')[5].slice(0, 2) // need to find a good way
+            this.repoCount = parseInt(temp) + 1 ;
+
+            const divResults = document.getElementById("results");
+
+            const pEl = document.createElement('p');
+            pEl.innerText = `Current repository count is: ${this.repoCount}`;
+
+            divResults.appendChild(pEl);
+            
+        } catch {
+            console.error(e);
+        }
+
+    }
+
+    async getIssues(name){
+
+        const headers = {
+            // "Authorization": `Token ${this.token}`
+        }
+
+            try {
+                const url = `https://api.github.com/search/issues?q=author:${name} type:issue`
+
+                let response = await fetch(url, {
+                    "method": "GET",
+                    // "headers": headers,
+                });
+                let data = await response.json();
+                this.issueCount = data.total_count;
+
+                const divResults = document.getElementById("results");
+
+                const pEl = document.createElement('p');
+                pEl.innerText = `Current issue count is: ${this.issueCount}`;
+
+                divResults.appendChild(pEl);
+
+            } catch {
+                console.error(e);
+            }
+
+    }
     async getRepositories(repoNames) {
 
         const headers = {

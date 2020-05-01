@@ -1,0 +1,48 @@
+
+.repo i{
+  font-size: 36px;
+  color: #fc5c5d;
+  margin-bottom: 20px;
+}
+
+#repos .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #e74c3c;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+#repos .card:hover{
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 5px 5px 15px #9E9E9E;
+}
+#repos img{
+    margin-top: -50px;
+}
+.github-repo-results{
+    background-image: url(../../img/background/andy-mai-WKiHL8khI2Q-unsplash.jpg);
+    background-size: 100%;
+}
+
+.big-banner{
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
+}
+#result-show {
+    opacity: 0.6;
+}
+a, a:hover, a:visited, a:active {
+  color:inherit;
+  text-decoration: none;
+ }
+.star {
+    padding-top: 7px;
+     color: green;
+ }
+ .star:hover {
+     color: yellow;
+ }

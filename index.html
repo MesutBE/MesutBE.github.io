@@ -1,13 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./style/css/all.css" />
     <title>Personal Portfolio</title>
-</head>
-<body>
-    <script>
-        alert('hi');
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+    <div class="jumbotron github-repo-results mb-0 jumbotron-fluid" style="height: 500px; padding-top: 150px;">
+         
+
+          <div class="container">
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                    <div class="col-md-6 text-dark bg-white" id = 'result-show'>
+                        <h1 class="display-5">Live Repository info!!</h1>
+                        <p class="lead">You can follow comments, issues, repository count...</p>
+                        <p id="results"></p>
+                    </div>
+
+                  <div class="col-md-6">
+                        <form class="form-inline my-2 my-lg-0" >
+                                
+                        </form>
+                    </div>
+
+
+                  </div>
+                 
+                </div>
+              </div>
+
+       </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand">
+        <img
+          class="logo"
+          width="40px"
+          src="./img/logo/web-developer.gif"
+          alt="logo"
+      /></a>
+      <span class="navbar-text">mesutBE</span>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#github-repos"
+            >GitHub Repositories</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar -->
+
+
+    <!-- Repo Cards -->
+    <div id="repos">
+      <div class="my-3 py-5 text-center container-fluid">
+        <div class="row mb-5">
+          <div class="col">
+            <h1>My GitHub Repositories</h1>
+          </div>
+        </div>
+
+        <div id="github-repos" class="row">
+          <!-- <div class="col-lg-4 col-md-6" style="margin-top: 45px;">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/kissclipart-github-icon-clipart-computer-icons-92d4a948a7c22cde.png" alt="" class="img-fluid rounded-circle w-50 mb-3 center">
+                <h2 class="text-dark font-weight-bold">Repo Name</h2>
+                <p class="text-justify text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ac sapien est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam a sagittis nisi. Nam sagittis elit sed elit euismod.</p>
+                <button type="button" class="btn btn-info">Go to Repo</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" style="margin-top: 45px;">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/kissclipart-github-icon-clipart-computer-icons-92d4a948a7c22cde.png" alt="" class="img-fluid rounded-circle w-50 mb-3 center">
+                <h2 class="text-dark font-weight-bold">Acme Web Design</h2>
+                <p class="text-justify text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ac sapien est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam a sagittis nisi. Nam sagittis elit sed elit euismod.</p>
+                <button type="button" class="btn btn-info">Go to Repo</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" style="margin-top: 45px;">
+            <div class="card">
+              <div class="card-body">
+                <img src="./img/kissclipart-github-icon-clipart-computer-icons-92d4a948a7c22cde.png" alt="" class="img-fluid rounded-circle w-50 mb-3 center">
+                <h2 class="text-dark font-weight-bold">Acme Web Design</h2>
+                <p class="text-justify text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet convallis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. In ac sapien est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam a sagittis nisi. Nam sagittis elit sed elit euismod.</p>
+                <button type="button" class="btn btn-info">Go to Repo</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+    <!-- Repo Cards -->
+
+    <div
+      id="about"
+      class="container-fluid bg-white"
+      style="padding-top: 200px; padding-bottom: 200px;"
+    >
+      <h1 class="text-center">About Me</h1>
+
+      <h3>Trainings</h3>
+      <table class="table table-light table-hover">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody">
+          <tr>
+            <td>BSc in Geomatics Engineering</td>
+            <td>2009</td>
+          </tr>
+          <tr>
+            <td>Programming Course (Java)</td>
+            <td>2015</td>
+          </tr>
+          <tr>
+            <td>Programming Course (Delphi)</td>
+            <td>2015</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div  id="contact" class="row" style="font-size: 12px;">
+      <div class="col pl-5">
+          <img src="./img/logo/web-developer.gif" width="60px" class="mr-5" > <span>Copyright © 2020 mesutBE</span>
+      </div>
+      <div class="col">
+          <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <p class="nav-link text-info" style="padding-top: 25px;" >email: gelukkig.zijn.be@gmail.com</p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" style="padding-top: 25px;"  href="https://github.com/MesutBE/">My GitHub Page: https://github.com/MesutBE/</a>
+              </li>
+            </ul>
+
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <!-- jquery -->
+    <script src="./style/js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./style/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      window.onload = () => import("./app/index.js");
     </script>
-</body>
+  </body>
 </html>

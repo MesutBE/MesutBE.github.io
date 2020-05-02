@@ -88,7 +88,7 @@ export default class GitHubWorks {
                 // debugger
                 let name = repo.split('-').join(' ')
                 this.githubReposEl.innerHTML = this.githubReposEl.innerHTML + `
-                <div class="col-lg-4 col-md-6" style="margin-top: 45px;">
+                <div class="col-lg-4 col-md-6 text-center" style="margin-top: 45px;padding-right: 60px;padding-left: 60px;">
                     <div class="card">
                         <div class="card-body">
                             <img src="./img/kissclipart-github-icon-clipart-computer-icons-92d4a948a7c22cde.png" alt="" class="img-fluid rounded-circle w-50 mb-3 center">

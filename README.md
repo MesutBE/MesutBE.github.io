@@ -14,3 +14,4 @@ What technologies used for developing the website;
 1. Import & export statements
 1. GitHub API
 1. HTML5, CSS
+1. Using Project Board and issues

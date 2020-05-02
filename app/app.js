@@ -6,7 +6,7 @@ export default class GitHubWorks {
         this.repoCount = 0
         this.issueCount = 0
         this.repoList = []
-        this.token = 'a6247b19d2ad0256aae31202d6005b96b29c92fc' //null
+        this.token = null
     }
 
     async getInfoRepoCount(name){

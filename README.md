@@ -1,6 +1,6 @@
 # Portfolio
 
-This repository will be updated with new the learned concepts.
+This repository will be updated with the new learned concepts.
 
 You can visit my [live repo](https://mesutbe.github.io/).
 

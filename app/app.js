@@ -36,8 +36,8 @@ export default class GitHubWorks {
 
             divResults.appendChild(pEl);
             
-        } catch {
-            console.error(e);
+        } catch (err) {
+            console.error(err);
         }
 
     }
@@ -65,8 +65,8 @@ export default class GitHubWorks {
 
                 divResults.appendChild(pEl);
 
-            } catch {
-                console.error(e);
+            } catch (err) {
+                console.error(err);
             }
 
     }
